@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-area{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  width: 300px;
+  height: 400px;
+  border: 2px solid black;
+  margin : 0px 30px; 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.img-size{
+  width: 200px;
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-icon-size{
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.reset-icon-size{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.button-rsp{
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button-rsp:hover .button-icon-size {
+  transform: scale(1.1); /* 이미지를 1.1배 확대 */
+}
+
+.button-rsp:hover .reset-icon-size {
+  transform: scale(1.1); /* 이미지를 1.1배 확대 */
+}
+
+.win{
+  border: 5px solid green;
+}
+.winColor{
+  color:green
+}
+
+.winScore{
+  color:green
+}
+
+.lose{
+  border : 5px solid red;
+}
+
+.loseColor{
+  color : red
+}
+
+.tie{
+  border : 5px solid black
+}
+
+.score-ara{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  width: 130px;
+}
+
+.line{
+  border: 1px solid red;
+}
+
+.reset-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
